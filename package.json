@@ -1,0 +1,22 @@
+{
+  "name": "portfolio-update-2",
+  "version": "1.0.0",
+  "description": "Let's do it -- my professional portfolio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kingbrs49/portfolio-update-2.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kingbrs49/portfolio-update-2/issues"
+  },
+  "homepage": "https://github.com/kingbrs49/portfolio-update-2#readme",
+  "dependencies": {
+    "config.json": "0.0.4"
+  }
+}
