@@ -18,6 +18,7 @@
   "homepage": "https://github.com/kingbrs49/portfolio-update-2#readme",
   "dependencies": {
     "config.json": "0.0.4",
+    "express": "^4.17.1",
     "path": "^0.12.7"
   }
 }
