@@ -9,7 +9,7 @@ module.exports = function (app) {
                 const shuffledResult = shuffle(result.resources);
                 // console.log(shuffledResult);
                 // req.send(shuffledResult[0].url)
-                var aboutImg = shuffledResult[0].url
+                var aboutImg = shuffledResult[0].url;
                 res.send(aboutImg);
                 // console.log(shuffledResult[0].url)
                 res.json(shuffledResult);
