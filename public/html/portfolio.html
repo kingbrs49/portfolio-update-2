@@ -4,29 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="../styles/styles.css">
     <title>Paulo C Camacho - Portfolio</title>
 </head>
 <body>
     
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="index">Paulo's Site</a>
+        <a class="navbar-brand" href="./index.html">Paulo C Camacho</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
             aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="./index.html">Home</a>
+                </li>
                 <li class="nav-item active">
-                    <a class="nav-link" href="index">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="./portfolio.html">Portfolio <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="portfolio">Portfolio</a>
+                    <a class="nav-link" href="./contact.html">Contact</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="contact">Contact</a>
+                    <a class="nav-link" href="about.html">About Me</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
@@ -35,7 +38,7 @@
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                         <a class="dropdown-item" href="https://pauloccamacho.wordpress.com/">The Macho Sports Report</a>
-                        <a class="dropdown-item" href="https://www.youtube.com/channel/UCLyYGkinb5lXRB_GyvjsENQ">The MSR
+                        <a class="dropdown-item" href="https://www.youtube.com/channel/UCLyYGkinb5lXRB_GyvjsENQ/videos">The MSR
                             YouTube</a>
                         <a class="dropdown-item"
                             href="http://www.davislifemagazine.com/davis-today/sports/macho-sports/">Davis Life
@@ -47,7 +50,84 @@
         </div>
     </nav>
 
-    
+    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="7"></li>
+        </ol>
+        <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="../img/slide-1-guess-that-letter.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+                <a href="https://kingbrs49.github.io/Psychic-Game/" class="btn btn-dark btn-lg" role="button">Guess! That! Letter!</a>
+                <p>It's the hottest game show this side of a coding class!</p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="../img/slide-2-crystal-collector.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+                <a href="https://kingbrs49.github.io/unit-4-game/" class="btn btn-dark btn-lg" role="button">Crystal Collector</a>
+                <p>Click the "Crystals" to match the number and win! Win what? I dunno.</p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="../img/slide-3-49ers-trivia.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+                <a href="https://kingbrs49.github.io/TriviaGame-Real/" class="btn btn-dark btn-lg" role="button">San Francisco 49ers Trivia</a>
+                <p>From one member of the Empire to another: Test your Red-and-Gold knowledge in this basic trivia game that I'm proud to have made.</p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="../img/slide-4-horoscope-tracker.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+                <a href="https://kingbrs49.github.io/TrainScheduler/" class="btn btn-dark btn-lg" role="button">Horoscope Tracker</a>
+                <p>Let me look into your Horoscope ... with movie quotes.</p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="../img/slide-5-giftastic.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+                <a href="https://kingbrs49.github.io/Gif-tastic/" class="btn btn-dark btn-lg" role="button">GIF-Tastic!: MCU Edition</a>
+                <p>Look up any GIF related to the Avengers -- with the click of a button, or the search of a keyboard.</p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="../img/slide-6-sac-sound-machine.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+                <a href="https://kingbrs49.github.io/project1/" class="btn btn-dark btn-lg" role="button">Sacramento Sound Machine</a>
+                <p>Build your own Drum Sequence or play around on our custom Drum Pad to your heart's desire.</p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="../img/slide-7-associate-acquirer.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+                <a href="https://glacial-springs-58101.herokuapp.com/" class="btn btn-dark btn-lg" role="button">AssociateAcquirer</a>
+                <p>Take the quiz -- and find out who your best friend would be in the wild and crazy Superhero-laden world of "The Boys"!</p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="../img/slide-8-daily-life-hack.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+                <a href="https://project-2-life-hacks.herokuapp.com/" class="btn btn-dark btn-lg" role="button">Daily Life Hack</a>
+                <p>Get the latest Life Hacks, submit your own, and schedule your day better with Daily Life Hack!</p>
+            </div>
+        </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"

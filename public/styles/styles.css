@@ -1,6 +1,29 @@
 body {
-    padding: 5rem;
-    background-image: url('./img/background-image.jpg');
+    background-image: url(../img/background-image.jpg);
     background-size: cover;
 };
 
+h1 {
+    color: white;
+    text-shadow: goldenrod;
+};
+
+h5 {
+    text-shadow: black;
+}
+
+h6 {
+    color: white;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.rotate90 {
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+}

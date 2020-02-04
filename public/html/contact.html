@@ -4,15 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="/__/firebase/7.8.0/firebase-app.js"></script>
+    <script src="/__/firebase/init.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.8.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.8.0/firebase-database.js"></script>
+    <link rel="stylesheet" href="../styles/styles.css">
     <title>Paulo C Camacho - Contact</title>
 </head>
 <body>
     
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="index">Paulo's Site</a>
+        <a class="navbar-brand" href="./index.html">Paulo C Camacho</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
             aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -20,13 +24,16 @@
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav">
                 <li class="nav-item active">
-                    <a class="nav-link" href="index">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="./index.html">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="portfolio">Portfolio</a>
+                    <a class="nav-link" href="./portfolio.html">Portfolio</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="./contact.html">Contact<span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="contact">Contact</a>
+                    <a class="nav-link" href="about.html">About Me</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
@@ -35,7 +42,7 @@
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                         <a class="dropdown-item" href="https://pauloccamacho.wordpress.com/">The Macho Sports Report</a>
-                        <a class="dropdown-item" href="https://www.youtube.com/channel/UCLyYGkinb5lXRB_GyvjsENQ">The MSR
+                        <a class="dropdown-item" href="https://www.youtube.com/channel/UCLyYGkinb5lXRB_GyvjsENQ/videos">The MSR
                             YouTube</a>
                         <a class="dropdown-item"
                             href="http://www.davislifemagazine.com/davis-today/sports/macho-sports/">Davis Life
@@ -47,7 +54,81 @@
         </div>
     </nav>
 
-    
+    <br>
+
+    <br>
+    <div class="card text-white bg-dark mb-3 ml-4 mr-4">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="card-header">
+                    <h2>Message Me!</h2>
+                </div>
+                <div class="card-body">
+                    <form role="form">
+                        <div class="form-group row">
+                            <!-- <label for="name-input">Name:</label> -->
+                            <input class="form-control" id="name-input" type="text" placeholder="Name">
+                        </div>
+                        <br>
+                        <div class="form-group row">
+                            <!-- <label for="email-input">Email:</label> -->
+                            <input class="form-control" id="email-input" type="email" placeholder="Email">
+                        </div>
+                        <br>
+                        <div class="form-group row">
+                            <!-- <label for="message">Message:</label> -->
+                            <textarea class="form-control" id="message" rows="7" type="text" placeholder="Message"></textarea>
+                        </div>
+                        <br>
+                        <button class="btn btn-danger" id="input-message" type="submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="card-header">
+                    <h2>Get In Touch</h2>
+                </div>
+                <div class="card-body">
+                    <p class="lead">
+                        I look forward to all feedback and general messages for all who feel the need to contact me. Thank you again for visiting my website!
+                    </p>
+                    <hr>
+                    <p class="lead">
+                        For all business inquiries, please leave an official contact email, and I will respond as soon as possible.
+                    </p>
+                    <hr>
+                    <p>
+                            <img src="../img/baseline_place_white_18pt_1x.png" align="middle">
+                            628 Emerald Hills Circle | Fairfield, CA | 94533
+                    </p>
+                    <p>
+                        <img src="../img/baseline_email_white_18pt_1x.png" align="middle">
+                        paulo.ccamacho@gmail.com
+                    </p>
+                    <hr>
+                    <div class="row">
+                        <div class="column">
+                            <a href="https://www.linkedin.com/in/paulo-camacho-ba3ba714/">
+                                <img src="../img/128px-Linkedin_icon.svg.png" title="LinkedIn Profile">
+                            </a>
+                        </div>
+                        <div class="column">
+                            <a href="https://github.com/kingbrs49">
+                                <img src="../img/128px_github.png" title="GitHub Profile">
+                            </a>
+                        </div>
+                    </div>
+                    <!-- <h2 id="i-name">Danielle</h2>
+                    <h3 id="i-email">daniecat84@gmail.com</h3>
+                    <br>
+                    <p id="message-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque
+                        distinctio ex repellat, mollitia cupiditate nam nihil labore explicabo fuga minima unde
+                        iusto
+                        repudiandae voluptatum harum odit ratione ullam perferendis? Eligendi!</p> -->
+                </div>
+            </div>
+        </div>
+    </div>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -58,5 +139,6 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+    <script src="../js/app.js"></script>
 </body>
 </html>
