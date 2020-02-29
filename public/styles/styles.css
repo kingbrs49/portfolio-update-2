@@ -6,8 +6,12 @@ body {
     background-attachment: fixed;
 };
 
+h1 {
+    text-shadow: 2px 2px black;
+}
+
 h2 {
-    text-shadow: 2px 2px goldenrod;
+    text-shadow: 2px 2px black;
 }
 
 h5 {
@@ -16,6 +20,18 @@ h5 {
 
 h6 {
     color: white;
+}
+
+a {
+    color: goldenrod;
+}
+
+p {
+    color: silver;
+}
+
+li {
+    color: silver;
 }
 
 .invisible {
