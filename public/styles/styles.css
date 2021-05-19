@@ -24,6 +24,12 @@ h6 {
 
 a {
     color: goldenrod;
+    text-decoration: none;
+}
+
+a:hover {
+    color: silver;
+    text-decoration: none;
 }
 
 p {
